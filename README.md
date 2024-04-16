@@ -4,11 +4,18 @@ CubeIDE demo project.
 
 LVGL benchmark shows weighted 91 FPS.
 
+[![Watch the video](https://img.youtube.com/vi/ogDc5SFtDnM/hqdefault.jpg)](https://www.youtube.com/embed/ogDc5SFtDnM)
+
 ![board](/Pictures/board.jpg)
 
 ![board](/Pictures/stm32f407vet6.png)
 
-# FSMC GPIO Configuration (LCD connection)
+
+## MCUFRIEND 3.95 TFT 480x320
+
+![lcd](/Pictures/lcd.jpg)
+
+## FSMC GPIO Configuration (LCD connection)
   
 +  	FSMC_NE1(PD7) -> LCD_CS
 +	FSMC_NWE(PD5) -> LCD_WR
