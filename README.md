@@ -13,7 +13,7 @@ LVGL benchmark shows weighted 91 FPS.
 
 ## MCUFRIEND 3.95 TFT 480x320
 
-![lcd](/Pictures/lcd.jpg)
+![lcd](/Pictures/lcd_1.jpg)
 
 ## FSMC GPIO Configuration (LCD connection)
   
