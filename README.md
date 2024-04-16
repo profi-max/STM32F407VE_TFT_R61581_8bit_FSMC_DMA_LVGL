@@ -116,30 +116,6 @@ Basically, every modern controller (which is able to drive a display) is suitabl
 
 *Note that the memory usage might vary depending on the architecture, compiler and build options.*
 
-### Supported platforms
-LVGL is completely platform independent and can be used with any MCU that fulfills the requirements.
-Just to mention some platforms:
-- NXP: Kinetis, LPC, iMX, iMX RT
-- STM32F1, STM32F3, STM32F4, STM32F7, STM32L4, STM32L5, STM32H7
-- Microchip dsPIC33, PIC24, PIC32MX, PIC32MZ
-- [Linux frame buffer](https://blog.lvgl.io/2018-01-03/linux_fb) (/dev/fb)
-- [Raspberry Pi](https://github.com/lvgl/lv_port_linux_frame_buffer)
-- [Espressif ESP32](https://github.com/lvgl/lv_port_esp32)
-- [Infineon Aurix](https://github.com/lvgl/lv_port_aurix)
-- Nordic NRF52 Bluetooth modules
-- Quectel modems
-- [SYNWIT SWM341](http://www.synwit.cn/)
-
-LVGL is also available as:
-- [Arduino library](https://docs.lvgl.io/master/get-started/platforms/arduino.html)
-- [PlatformIO package](https://registry.platformio.org/libraries/lvgl/lvgl)
-- [Zephyr library](https://docs.zephyrproject.org/latest/reference/kconfig/CONFIG_LVGL.html)
-- [ESP32 component](https://docs.lvgl.io/master/get-started/platforms/espressif.html)
-- [NXP MCUXpresso component](https://www.nxp.com/design/software/embedded-software/lvgl-open-source-graphics-library:LITTLEVGL-OPEN-SOURCE-GRAPHICS-LIBRARY)
-- [NuttX library](https://docs.lvgl.io/master/get-started/os/nuttx.html)
-- [RT-Thread RTOS](https://docs.lvgl.io/master/get-started/os/rt-thread.html)
-
-
 ## Get started
 This list shows the recommended way of learning the library:
 1. Check the [Online demos](https://lvgl.io/demos) to see LVGL in action (3 minutes)
@@ -175,22 +151,6 @@ void btn_event_cb(lv_event_t * e)
 {
   printf("Clicked\n");
 }
-```
-### Micropython
-Learn more about [Micropython](https://docs.lvgl.io/master/get-started/bindings/micropython.html).
-```python
-def btn_event_cb(e):
-  print("Clicked")
-
-# Create a Button and a Label
-btn = lv.btn(lv.scr_act())
-btn.set_pos(10, 10)
-btn.set_size(100, 50)
-btn.add_event_cb(btn_event_cb, lv.EVENT.CLICKED, None)
-
-label = lv.label(btn)
-label.set_text("Button")
-label.center()
 ```
 
 ## Services
